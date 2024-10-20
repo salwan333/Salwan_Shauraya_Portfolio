@@ -1,0 +1,97 @@
+
+
+#portfolioWorks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.myWorks {
+    padding: 20px 0;
+}
+
+.myWorks div {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 180px 0;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.myWorks div:hover {
+    transform: scale(1.05);
+}
+
+.skill div {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 180px 0;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contactUsForm {
+    background-color: var(--primary-color);
+    padding: 50px;
+    margin: 20px auto;
+    border-radius: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.contactUsForm form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactUsForm form input,
+.contactUsForm form textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contactUsForm form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contactUsForm form button:hover {
+    background-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    #portfolioWorks {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .myWorks div,
+    .skill div {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .contactUsForm {
+        padding: 20px;
+    }
+
+    .contactUsForm form {
+        width: 100%;
+    }
+
+    .contactUsForm form input,
+    .contactUsForm form textarea {
+        width: 100%;
+    }
+}
