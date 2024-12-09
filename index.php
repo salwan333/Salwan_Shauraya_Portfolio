@@ -98,11 +98,14 @@ $results = mysqli_query($connect,$query);
             <h2>My Work</h2>
             <div class="projects-grid">
                 <div class="project-item">
+                <?php
+                while($row = mysqli_fetch_array($result)){
+                    
                     <img src="images/p1.jpg" alt="Project 1" data-case-study="case-study1.html">
                     <p></p>
                 </div>
                 <div class="project-item">
-                    <img src="images/p2.jpg" alt="Project 2" data-case-study="case-study2.html">
+                    <img src="images/'; echo $row['image']." alt="Project 2" data-case-study="case-study2.html">
                     <p></p>
                 </div>
                 <div class="project-item">
@@ -112,7 +115,7 @@ $results = mysqli_query($connect,$query);
                 <div class="project-item">
                     <img src="images/p4.jpg" alt="Project 4" data-case-study="case-study4.html">
                     <p></p>
-                </div>
+                </div>}
             </div>
         </section>
 
