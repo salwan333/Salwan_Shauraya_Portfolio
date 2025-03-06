@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+
+
+@keyframes scrollProgress {
+  from {
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+
+
+
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -562,3 +576,5 @@ footer .social-links .social-icon {
   height: auto;
   
 }
+
+
