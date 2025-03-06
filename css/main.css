@@ -602,3 +602,18 @@ footer .social-links .social-icon {
   mix-blend-mode: difference;
   z-index: 9999;
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode header, 
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+  color: #8a9dff;
+}
+
+/* Add more styles to adjust elements as needed */

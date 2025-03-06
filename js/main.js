@@ -145,7 +145,7 @@ if (cursor) {
     });
 
     document.addEventListener("mousedown", () => {
-        cursor.style.transform = "scale(1.5)"; // Slightly enlarge on click
+        cursor.style.transform = "scale(1.5)"; 
     });
 
     document.addEventListener("mouseup", () => {
@@ -153,3 +153,27 @@ if (cursor) {
     });
 }
 
+const themeToggleBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Check if the button exists before adding event listeners
+if (themeToggleBtn) {
+    // Apply saved theme preference
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeToggleBtn.textContent = "☀️ Light Mode";
+    }
+
+    // Toggle theme on button click
+    themeToggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            themeToggleBtn.textContent = "☀️ Light Mode";
+        } else {
+            localStorage.setItem("theme", "light");
+            themeToggleBtn.textContent = "🌙 Dark Mode";
+        }
+    });
+}
