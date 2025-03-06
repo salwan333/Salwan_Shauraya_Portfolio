@@ -1,0 +1,62 @@
+/* Green background for the site */
+body {
+    background-color: #2ecc71;
+    color: white;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1e8449;
+}
+
+/* Center the single image */
+.single-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image-container {
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+.description {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
