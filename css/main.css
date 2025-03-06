@@ -294,7 +294,7 @@ footer p {
 
 .reference-item {
   flex: 1 1 calc(25% - 20px); 
-  max-width: 120px; 
+  max-width: 200px; 
   text-align: center; 
 }
 
@@ -434,7 +434,7 @@ video {
 .references-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 200px;
+  gap: 300px;
   justify-content: center;
 }
 
