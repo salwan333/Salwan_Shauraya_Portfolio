@@ -587,3 +587,18 @@ footer .social-links .social-icon {
   background: #8a9dff;
   z-index: 9999;
 }
+/* Custom Green Cursor */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #00ff00; /* Green Color */
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
