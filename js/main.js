@@ -134,19 +134,22 @@ gsap.to("#progress-bar", {
         scrub: 0.5
     }
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const cursor = document.querySelector(".custom-cursor");
+const cursor = document.querySelector(".custom-cursor");
 
-  document.addEventListener("mousemove", (e) => {
-      cursor.style.top = `${e.clientY}px`;
-      cursor.style.left = `${e.clientX}px`;
-  });
+if (cursor) {
+    document.addEventListener("mousemove", (e) => {
+        requestAnimationFrame(() => {
+            cursor.style.top = `${e.clientY}px`;
+            cursor.style.left = `${e.clientX}px`;
+        });
+    });
 
-  document.addEventListener("mousedown", () => {
-      cursor.style.transform = "scale(1.5)"; // Slightly enlarge on click
-  });
+    document.addEventListener("mousedown", () => {
+        cursor.style.transform = "scale(1.5)"; // Slightly enlarge on click
+    });
 
-  document.addEventListener("mouseup", () => {
-      cursor.style.transform = "scale(1)";
-  });
-});
+    document.addEventListener("mouseup", () => {
+        cursor.style.transform = "scale(1)";
+    });
+}
+
