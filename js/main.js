@@ -121,3 +121,16 @@ gsap.from(".projects-grid", {
   y: 50,
   duration: 1,
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#progress-bar", {
+    width: "100%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 0.5
+    }
+});

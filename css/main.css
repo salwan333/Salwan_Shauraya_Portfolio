@@ -578,3 +578,12 @@ footer .social-links .social-icon {
 }
 
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background: #8a9dff;
+  z-index: 9999;
+}
