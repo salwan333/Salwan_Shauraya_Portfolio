@@ -156,15 +156,15 @@ if (cursor) {
 const themeToggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
-// Check if the button exists before adding event listeners
+
 if (themeToggleBtn) {
-    // Apply saved theme preference
+   
     if (localStorage.getItem("theme") === "dark") {
         body.classList.add("dark-mode");
         themeToggleBtn.textContent = "☀️ Light Mode";
     }
 
-    // Toggle theme on button click
+   
     themeToggleBtn.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
 
@@ -185,7 +185,7 @@ if (themeToggleBtn) {
   function regForm(event) {
       event.preventDefault();
       const thisForm = event.currentTarget;
-      const url = "contact.php";
+      const url = "http://localhost/Salwan_Shauraya_Portfolio/contact.php";
 
       const formData = 
       `name=${thisForm.elements[0].value}&email=${thisForm.elements[1].value}&phone=${thisForm.elements[2].value}&message=${thisForm.elements[3].value}`;
