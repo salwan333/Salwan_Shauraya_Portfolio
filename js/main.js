@@ -177,3 +177,57 @@ if (themeToggleBtn) {
         }
     });
 }
+
+(() => {
+  const form = document.querySelector(".contact-form");
+  const feedBack = document.querySelector("#feedBack");
+
+  function regForm(event) {
+      event.preventDefault();
+      const thisForm = event.currentTarget;
+      const url = "contact.php";
+
+      const formData = 
+      `name=${thisForm.elements[0].value}&email=${thisForm.elements[1].value}&phone=${thisForm.elements[2].value}&message=${thisForm.elements[3].value}`;
+
+      console.log(formData);
+
+      fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: formData
+      })
+      .then(response => response.json())
+      .then(response => {
+          console.log(response);
+          feedBack.innerHTML = "";
+
+          if (response.errors) {
+              response.errors.forEach(error => {
+                  const errorElement = document.createElement("p");
+                  errorElement.textContent = error;
+                  errorElement.style.color = "red";
+                  feedBack.appendChild(errorElement);
+              });
+          } else {
+              form.reset();
+              const messageElement = document.createElement("p");
+              messageElement.textContent = response.message;
+              messageElement.style.color = "green";
+              feedBack.appendChild(messageElement);
+          }
+
+          feedBack.scrollIntoView({ behavior: "smooth", block: "end" });
+      })
+      .catch(error => {
+          console.error(error);
+          const errorMessage = document.createElement("p");
+          errorMessage.textContent = "Whoops, something went wrong!";
+          errorMessage.style.color = "red";
+          feedBack.appendChild(errorMessage);
+      });
+  }
+
+  form.addEventListener("submit", regForm);
+})();
+
