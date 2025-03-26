@@ -153,30 +153,10 @@ if (cursor) {
     });
 }
 
-const themeToggleBtn = document.getElementById("theme-toggle");
-const body = document.body;
 
 
-if (themeToggleBtn) {
-   
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        themeToggleBtn.textContent = "☀️ Light Mode";
-    }
 
-   
-    themeToggleBtn.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
 
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
-            themeToggleBtn.textContent = "☀️ Light Mode";
-        } else {
-            localStorage.setItem("theme", "light");
-            themeToggleBtn.textContent = "🌙 Dark Mode";
-        }
-    });
-}
 
 (() => {
   const form = document.querySelector(".contact-form");
