@@ -162,7 +162,7 @@ $results = mysqli_query($connect,$query);
     </main>
         <footer>
             <div class="footer-logo">
-                <img src="images/logo.svg" alt="Logo">
+                <img src="images/new-logo.svg" alt="Logo">
             </div>
             <ul class="social-links">
                 <li><a href="https://github.com/salwan333" target="_blank"><img src="images/git_logo.png" alt="Github" class="social-icon"> Github</a></li>

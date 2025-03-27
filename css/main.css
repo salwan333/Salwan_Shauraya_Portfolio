@@ -544,20 +544,14 @@ video {
 footer {
   padding: 20px;
   background-color: #282828;
-  color: white;
+  color: rgb(56, 115, 71);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-logo img {
-  max-width: 100px;
-  transition: transform 0.3s ease-in-out;
-}
 
-.footer-logo:hover img {
-  transform: scale(1.1);
-}
+
 
 .social-links {
   display: flex;
@@ -624,19 +618,7 @@ footer .social-links .social-icon:hover {
   z-index: 9999;
 }
 
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
 
-body.dark-mode header, 
-body.dark-mode footer {
-  background-color: #1e1e1e;
-}
-
-body.dark-mode a {
-  color: #8a9dff;
-}
 
 .resume-button {
   display: inline-block;
@@ -667,3 +649,15 @@ body.dark-mode a {
   box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
 }
 
+.footer-logo img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the logo */
+}
+@media (max-width: 768px) {
+  .footer-logo img {
+      display: block;
+      width: 80px; /* Adjust size for smaller screens */
+  }
+}

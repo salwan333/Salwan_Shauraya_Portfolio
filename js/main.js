@@ -68,18 +68,7 @@ gsap.to("#rotating-svg", {
 });
 
 
-gsap.to(".footer-logo img", {
-  rotate: 360,
-  duration: 5,
-  repeat: -1,
-  ease: "linear",
-  scrollTrigger: {
-    trigger: "footer",
-    start: "top bottom",
-    end: "bottom top",
-    scrub: 1,
-  },
-});
+
 
 gsap.timeline({
   scrollTrigger: {
