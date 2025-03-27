@@ -151,9 +151,7 @@ header nav ul li a:hover {
   height: auto;
 }
 
-.software-item:hover {
-  background-color: #00ff00;
-}
+
 
 .projects-section {
   padding: 80px 50px;
@@ -599,6 +597,8 @@ footer .social-links .social-icon:hover {
 }
 
 
+
+
 #progress-bar {
   position: fixed;
   top: 0;
@@ -637,3 +637,33 @@ body.dark-mode footer {
 body.dark-mode a {
   color: #8a9dff;
 }
+
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.resume-button:active {
+  background-color: #388e3c;
+  transform: translateY(0);
+}
+
+.resume-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
