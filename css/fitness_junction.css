@@ -1,9 +1,19 @@
+/* Black background for the site */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
 /* Back Button */
 .back-button {
     display: inline-block;
     margin: 15px;
     padding: 10px 15px;
-    background-color: #28a745;
+    background-color: #27ae60;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -12,7 +22,7 @@
 }
 
 .back-button:hover {
-    background-color: #1f7a32;
+    background-color: #1e8449;
 }
 
 /* Center the single image */
@@ -23,11 +33,11 @@
 }
 
 .image-container {
-    width: 300px;
+    width: 350px;
     height: auto;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -35,18 +45,51 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+    border-radius: 15px;
 }
 
 .image-container:hover {
     transform: scale(1.1);
 }
 
+/* Video Section */
+.video-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    height: 100vh;
+}
+
+video {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Description Box */
 .description {
     max-width: 600px;
     margin: 30px auto;
     padding: 20px;
-    background: white;
+    
+    color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
+    line-height: 1.6;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    height: auto;
+}
+
+video {
+    max-width: 60%; 
+    height: auto;
+    border-radius: 10px;
 }

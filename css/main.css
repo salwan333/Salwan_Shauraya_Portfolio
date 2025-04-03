@@ -105,7 +105,7 @@ header nav ul li a:hover {
 
 .about-me-section {
   padding: 80px 50px;
-  background-color: #111;
+  background-color: #000000;
 }
 
 .about-me-section h2 {
@@ -138,11 +138,11 @@ header nav ul li a:hover {
 
 .software-item {
   flex: 1 1 calc(33.333% - 20px);
-  background-color: #222;
+  background-color: #000000;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
-  color: #fff;
+  color: #000000;
   transition: background-color 0.3s;
 }
 
@@ -155,7 +155,7 @@ header nav ul li a:hover {
 
 .projects-section {
   padding: 80px 50px;
-  background-color: #111;
+  background-color: #000000;
 }
 
 .projects-section h2 {
@@ -191,7 +191,7 @@ header nav ul li a:hover {
 
 .project-item:hover {
   transform: scale(1.05);
-  border-color: #fff;
+  border-color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -269,7 +269,7 @@ footer p {
 
 .references-section {
   padding: 80px 50px;
-  background-color: #111; 
+  background-color: #000000; 
   text-align: center; 
   gap: 10px;
 }
@@ -365,7 +365,7 @@ video {
 
 .software-section {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -384,8 +384,8 @@ video {
 }
 
 .software-item {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #000000;
+  border: 1px solid #000000;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
@@ -413,7 +413,7 @@ video {
 
 .references-section {
   padding: 100px 70px;
-  background-color: #111;
+  background-color: #000000;
   text-align: center;
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -515,7 +515,7 @@ video {
 .software-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #000000;
 }
 
 .software-grid {
@@ -526,7 +526,7 @@ video {
 }
 
 .software-item {
-  background: #fff;
+  background: #000000;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
