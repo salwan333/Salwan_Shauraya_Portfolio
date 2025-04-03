@@ -1,54 +1,84 @@
-/* Back Button */
-.back-button {
-    display: inline-block;
-    margin: 15px;
-    padding: 10px 15px;
-    background-color: #e91e63;
+/* kavorka.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #1a1a1a;
     color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
 }
 
-.back-button:hover {
-    background-color: #c2185b;
+/* Header Styling */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 25px 0;
+    font-size: 28px;
+    font-weight: 600;
 }
 
-/* Center the single image */
-.single-image {
+/* Image Gallery */
+.image-gallery {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    gap: 30px;
+    margin: 40px 0;
 }
 
 .image-container {
-    width: 350px;
-    height: auto;
+    width: 45%;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
-    object-fit: contain;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .image-container:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.description {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Section Styling */
+.description, .challenges, .solutions {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #ff4da6;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 18px;
+    background-color: #ff4da6;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 8px;
-    text-align: center;
-    font-family: "Arial", sans-serif;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e60073;
 }
