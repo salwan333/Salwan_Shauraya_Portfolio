@@ -1,14 +1,15 @@
-/* styles.css */
+/* Updated styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: #000000;
+    color: white;
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 20px 0;
     font-size: 24px;
@@ -19,6 +20,7 @@ header {
     justify-content: center;
     gap: 30px;
     margin: 50px 0;
+    flex-wrap: wrap;
 }
 
 .image-container {
@@ -26,7 +28,7 @@ header {
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -34,20 +36,26 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .image-container:hover {
     transform: scale(1.1);
 }
 
-.description {
-    max-width: 600px;
-    margin: 0 auto;
+.description, .challenges, .solutions {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
+
+h2 {
+    color: #00aaff;
+}
+
 /* Back Button */
 .back-button {
     display: inline-block;
@@ -62,5 +70,5 @@ header {
 }
 
 .back-button:hover {
-    background-color: #005bb5;
+    background-color: #21ab38;
 }
